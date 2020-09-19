@@ -1,5 +1,5 @@
 .Footer{
-    color: var();
+    background: var(-bgGrey);
 }
 
 .Footer__copyright{

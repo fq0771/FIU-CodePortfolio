@@ -1,5 +1,5 @@
-.Work{
-    color: var(--accentBlue);
+.Main__work{
+    background: var(--bgGrey);
 }
 
 .Work__title{
@@ -20,4 +20,6 @@
 
 .Work__projectInfo{
     color: var(--blueOpacity);
+    font-size: 1.5rem;
+    line-height: 1.4;
 }
