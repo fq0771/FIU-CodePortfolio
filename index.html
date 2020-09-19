@@ -2,7 +2,7 @@
 <html>
     <head>
         <title> My Portfolio </title>
-
+        <link rel="stylesheet" href="" class="./styles/main.css">
         <script src="https://kit.fontawesome.com/ee8942593a.js" crossorigin="anonymous"></script>
     </head>
 <body id = "home">
@@ -10,18 +10,18 @@
 
       <nav class = "Header__navbar">
           <div class = "Header__navigation">
-              <ul class = "Headeer__navContent">
-                  <li class = "Headeer__navItem"><a href = "#home" class = "Header__navLink"  >Home</a></li>
-                  <li class = "Headeer__navItem"><a href = "#about" class = "Header__navLink"  >About</a></li>
-                  <li class = "Headeer__navItem"><a href = "#home" class = "Header__navLink"  >Home</a></li>
-                  <li class = "Headeer__navItem"><a href = "#home" class = "Header__navLink"  >Home</a></li>
+              <ul class = "Header__navContent">
+                  <li class = "Header__navItem"><a href = "#home" class = "Header__navLink"  >Home</a></li>
+                  <li class = "Header__navItem"><a href = "#about" class = "Header__navLink"  >About</a></li>
+                  <li class = "Header__navItem"><a href = "#work" class = "Header__navLink"  >Work</a></li>
+                  <li class = "Header__navItem"><a href = "#contact" class = "Header__navLink"  >Contact</a></li>
               </ul>
           </div>
       </nav>  
 
       <section class = "Header__content">
           <h1>Francisco Quiroz</h1>
-          <p>A <span class = "Header__highlight"><em>Milf HUnter and FSD</em></span>
+          <p>A <span class = "Header__highlight"><em>Sexy Beast and Full Stack Developer</em></span>
         </p>
 
       </section>
@@ -119,11 +119,24 @@
             <form action = "" method = "POST" class ="Contact_form">
                 <div class = "Contact__inputs">
                     <div class = "Contact_formField">
-                        <label  = "name" class = "Contact__label"> Name:</label>
+                        <label class = "Contact__label" for = "name">Name:</label>
                         <input type = "text" name = "name" id = "name" class ="Contact__input" required>
                     </div>
+                    <div class = "Contact_formField">
+                        <label class = "Contact__label" for = "email">Email:</label>
+                        <input type = "text" name = "email" id = "email" class ="Contact__input" required>
+                    </div>
+                    <div class = "Contact_formField">
+                        <label class = "Contact__label" for = "phone">Phone Number:</label>
+                        <input type = "text" name = "phone" id = "phone" class ="Contact__input" required>
+                    </div>
+                    
                 </div>
-                <button type = "submit"
+                <div class="Contact__MessageField">
+                    <label for="message" class="Contact__label">Message:</label>
+                    <textarea name="message" id="message" class="Contact__message"></textarea>
+                </div>
+                <button type = "submit" class= "btn Contact__btn">Submit:</button>
             </form>
         </div>
 
